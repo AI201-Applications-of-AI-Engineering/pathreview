@@ -57,13 +57,13 @@ No open blockers or dependencies.
 
 # Week 8 — Reproduction & solution planning
 
-**Reproduction commit link:** [link to commit documenting the reproduced issue]
+**Reproduction commit link:** https://github.com/AI201-Applications-of-AI-Engineering/pathreview/commit/08fd74e1ec17692fc04d7f115b6d44ed3b3435e8
 
 **Reproduction summary:**
 <!-- [1–2 sentences: How did you reproduce the issue? What did you observe?] -->
 I utilized Claude to help regenerate the issue. I based my PLAN.md and JOURNAL.md, and asked it to reproduce what the issue can occur. Afterwards, I asked it to store it in a file, in which it is now located in "/tests/unit/test_orchestrator_session_reset.py".
 
-**PLAN.md link:** [link to PLAN.md in your fork]
+**PLAN.md link:** https://github.com/AI201-Applications-of-AI-Engineering/pathreview/blob/fix/43-agent-state-not-cleared/PLAN.md
 
 **Walkthrough video (recommended):** [link to your Loom video, ≤2 min — recommended, not graded]
 
