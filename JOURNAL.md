@@ -1,4 +1,4 @@
-## Week 7 — Issue selection
+# Week 7 — Issue selection
 
 **Issue link:** https://github.com/ascherj/pathreview/issues/43
 
@@ -17,7 +17,7 @@ When a user submits a review, the agent reviews their submission, generates the 
 
 **Cohort ledger:** [x] Issue added to cohort ledger
 
-# "Is this right for me?" Checklist
+## "Is this right for me?" Checklist
 
 ## Part 1 — Understanding the issue
 ### Can I explain what this issue is asking for in my own words?
@@ -54,3 +54,18 @@ There are 23 listed on the ledger, making me the 24th. Since it's my first open 
 Since its Tier 1, I believe it's feasible to complete before Week 9.
 ### Are there any blockers or dependencies?
 No open blockers or dependencies.
+
+# Week 8 — Reproduction & solution planning
+
+**Reproduction commit link:** [link to commit documenting the reproduced issue]
+
+**Reproduction summary:**
+<!-- [1–2 sentences: How did you reproduce the issue? What did you observe?] -->
+I utilized Claude to help regenerate the issue. I based my PLAN.md and JOURNAL.md, and asked it to reproduce what the issue can occur. Afterwards, I asked it to store it in a file, in which it is now located in "/tests/unit/test_orchestrator_session_reset.py".
+
+**PLAN.md link:** [link to PLAN.md in your fork]
+
+**Walkthrough video (recommended):** [link to your Loom video, ≤2 min — recommended, not graded]
+
+**Blockers or open questions:**
+[Anything you're still uncertain about going into Week 9, or leave blank]
