@@ -12,14 +12,16 @@ This test currently FAILS (documents the bug). It should PASS once the
 orchestrator clears prior state before persisting the current review.
 """
 
-from typing import cast
+from typing import TYPE_CHECKING, cast
 
 import pytest
-import redis
 
 from agent.memory.session_store import SessionStore
 from agent.orchestrator import Orchestrator
 from agent.tools.base import BaseTool, ToolResult
+
+if TYPE_CHECKING:
+    import redis
 
 
 class FakeRedis:
@@ -62,10 +64,11 @@ def _make_orchestrator(session_store: SessionStore) -> Orchestrator:
     return Orchestrator(tools=tools, session_store=session_store)
 
 
+@pytest.mark.unit
 def test_session_state_cleared_between_reviews() -> None:
     """A later review must not retain tool results from an earlier one."""
     # FakeRedis implements the subset of the redis client SessionStore uses.
-    store = SessionStore(cast(redis.Redis, FakeRedis()))
+    store = SessionStore(cast("redis.Redis", FakeRedis()))
     profile_id = "user-123"
 
     # Review 1: portfolio WITH a resume -> skill_extractor runs and is stored.

@@ -45,11 +45,6 @@ class Orchestrator:
         # Build execution plan
         plan = self._build_plan(profile_data)
 
-        # Load previous session state if available
-        session_state = {}
-        if self.session_store:
-            session_state = self.session_store.get(profile_id) or {}
-
         # Execute plan
         results = {}
         for tool_name, tool_input in plan:
@@ -65,8 +60,7 @@ class Orchestrator:
 
         # Persist state
         if self.session_store:
-            session_state.update(results)
-            self.session_store.set(profile_id, session_state)
+            self.session_store.set(profile_id, results)
 
         logger.info("orchestrator_complete", profile_id=profile_id, tools_executed=len(results))
 
