@@ -69,3 +69,35 @@ I utilized Claude to help regenerate the issue. I based my PLAN.md and JOURNAL.m
 
 **Blockers or open questions:**
 [Anything you're still uncertain about going into Week 9, or leave blank]
+
+# Week 9 — Solution building & PR submission
+
+## Check-in 1 (mid-week)
+
+**Current progress:**
+[What have you implemented so far? Which sub-tasks from PLAN.md are done?]
+I've completed the fix, having tested with the sample test file that I've built. To make sure there were no issues, I ran the file before and after my change to make sure there were noticeable changes. 
+
+**Next steps:**
+[What are you working on for the rest of the week?]
+Addressing the PR, seeing if I can improve on it, and if I am missing anything, and practice more of it.
+**Blockers:**
+[Anything slowing you down? Or leave blank.]
+I am submitting this a week later than the actual due date, so I apologize if I'm not able to get feedback for myself. Thank you for all the help this year.
+---
+
+## Check-in 2 (end of week)
+
+**PR link:** [link to your submitted pull request]
+
+**Branch:** [the branch name you worked on, e.g. `fix/123-short-description`]
+
+**What you built:**
+[1–3 sentences summarizing what your fix does and how it works]
+
+**Tests added or updated:**
+[Which test files did you touch? What do they cover?]
+
+**Self-review confirmation:** [ ] make check passes  [ ] make test-unit passes
+
+**Draft PR feedback received from:** [name or Slack handle, or "none"]
