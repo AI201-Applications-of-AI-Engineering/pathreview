@@ -88,16 +88,20 @@ I am submitting this a week later than the actual due date, so I apologize if I'
 
 ## Check-in 2 (end of week)
 
-**PR link:** [link to your submitted pull request]
+**PR link:** https://github.com/ascherj/pathreview/pull/1008
 
-**Branch:** [the branch name you worked on, e.g. `fix/123-short-description`]
+**Branch:** 
+<!-- [the branch name you worked on, e.g. `fix/123-short-description`] -->
+fix/43-agent-state-not-cleared 
 
 **What you built:**
-[1–3 sentences summarizing what your fix does and how it works]
+The original bug was that when a user requests a review, they are able to receive feedback on it. However, if the user submits a revised review, the stored session still contained the results from the first review instead of producing a clean fresh analysis of the new submission. What I've done is completely remove the loading of the previous state, which caused a buggy merge, and directly store the results of the new review within the state by overwriting what was previously there. 
 
 **Tests added or updated:**
 [Which test files did you touch? What do they cover?]
+Because there was no test file made for this bug, I created a sample test file, named "test_orchestrator_session_reset.py". This test file tested the leak existed before the fix, and what it outputted after the fix by having one user submitting two reviews against a shared store. The test would fail if the orchestrator merged review 2 onto review 1's state, and would pass if it replaced the state. 
 
 **Self-review confirmation:** [ ] make check passes  [ ] make test-unit passes
+NOTE: The errors that existed before the change and after the change remained, but the changes introduced zero new failures. Because this error did not have its own test as part of the test-unit, I had to manually add the test into it to make sure that it passed.
 
 **Draft PR feedback received from:** [name or Slack handle, or "none"]
