@@ -105,3 +105,46 @@ Because there was no test file made for this bug, I created a sample test file, 
 NOTE: The errors that existed before the change and after the change remained, but the changes introduced zero new failures. Because this error did not have its own test as part of the test-unit, I had to manually add the test into it to make sure that it passed.
 
 **Draft PR feedback received from:** [name or Slack handle, or "none"]
+
+# Week 10 — Iteration & reflection
+
+## Reviewer feedback
+
+**Feedback received:** [ ] Yes  [x] No — still awaiting review
+
+**Summary of feedback:**
+[What did reviewers comment on? Or note that no review came in.]
+No reviews yet.
+
+**How you responded:**
+[What changes did you make, or what did you reply? If no feedback,
+leave blank.]
+
+---
+
+## Reflection
+
+**What was harder than you expected?**
+[Be specific — what part of the process, codebase, or workflow
+surprised you?]
+Having this as my first PR ever, understanding the process and successfully following the guidelines was probably the hardest part for me. Because I was new to this process, I didn't know where to start or where to look at. Though I was able to use AI to try to understand the project that I was working with, I still didn't know exactly where to start. Because of this, having AI actually saved so much time, directing me to where the bug occurred. Having figured this out, the next step was understanding what the code did, and backtracking from here to figure out where it starts and then process it up. Once I was able to understand (and having Claude to help me out with examples and clarifications), I was able to find the issue by isolating predicted/actual results and having Claude help me print the actual errors, and go from there.
+
+**What did you learn about working in a large codebase?**
+[What's different about contributing to someone else's production code
+vs. building your own project?]
+Working in a large codebase gave me an experience on how other SWEs work. Not everything is start from scratch; many times, it starts with an older production base, and it's with this project that I learned the fundamentals of SWE. Having to first understand the problem, understanding the codebase, and then connecting the two to find the issue. While this is my simplified version of what SWEs do, I felt like this was a very good step to understanding how to contribute to future bigger projects, and I'll be able to learn more as I go.
+
+**How did AI tools help — and where did they fall short?**
+[Where was AI assistance most useful this module? Where did you need
+to go beyond what AI could give you?]
+AI assistance was best for me in understanding where to start, what the files that were associated with the issues did, and where the problem occurred. Having the baseline of the problems, I was able to study each file and understand what they did, vs what they are suppose to do. 
+Though I had AI to help me understand and isolate the bug, I didn't use it to write my statements. I wanted the readers to understand what I wrote, and understand clearly so that when future reviewers read this issue, they are able to understand what I wanted to do, and what the expected results were. Because AI writes very robotic, I figure writing everything myself could allow reviewers to know that every statement was written to be understood at layman's terms.
+
+**What would you do differently if you started over?**
+[Issue selection, planning, implementation, or process — anything
+you'd change?]
+Doing everything in one go. Starting from the issue selection to planning to implementation, I want to be able to understand everything in the beginning before trying to figure out where the error occurred.
+
+**What are you most proud of from this module?**
+[One thing — it doesn't have to be the PR itself.]
+Being able to know what to do from start to finish. Even if there was one thing wrong or something that I could've done better, this was a learning experience for me and any sort of success/failure helps me grow.
